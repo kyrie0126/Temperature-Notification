@@ -41,7 +41,7 @@ client = Client(account_sid, auth_token)
 message = client.messages \
                 .create(
                      body=f"Today's Forecast:\n{forecast_notification}",
-                     from_='+19257226334',
-                     to='+19253145566'
+                     from_='your_twilio_number',
+                     to='your_phone_number'
                  )
 print(message.status)
